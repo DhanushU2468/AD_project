@@ -1,11 +1,9 @@
+streamlit
 torch
 torchvision
 numpy
-pillow
-opencv-python
-streamlit
-tqdm
-kagglehub
 opencv-python-headless
 scikit-image
+Pillow
 matplotlib
+gdown
