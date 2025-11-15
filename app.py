@@ -5,11 +5,13 @@ from models.hybrid_model import HybridModel
 from explainability.gradcam import GradCAM
 from skimage.transform import resize
 import torch.nn.functional as F
+import gdown
 
 st.set_page_config(page_title="🧠 Alzheimer’s MRI Classifier", layout="centered")
 st.title("🧠 Alzheimer’s Disease Classification with Grad-CAM")
 st.set_option('deprecation.showPyplotGlobalUse', False) # Suppress pyplot global use warning
-
+url = "https://drive.google.com/file/d/1rKYNRNfanwhfwwPl2Lt9luIwBKhuHzkL/view?usp=drive_link"
+gdown.download(url, "models/model_epoch_2.pth", quiet=False)
 labels = ["Non Demented", "Very mild Dementia", "Mild Dementia", "Moderate Dementia"]
 
 @st.cache_resource
