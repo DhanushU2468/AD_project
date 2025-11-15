@@ -2,9 +2,10 @@ torch
 torchvision
 numpy
 pillow
-scikit-image
 opencv-python
 streamlit
 tqdm
 kagglehub
+opencv-python-headless
+scikit-image
 matplotlib
